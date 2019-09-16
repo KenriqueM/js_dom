@@ -314,3 +314,13 @@ quotes = [
         "quoteText": "Great talent finds happiness in execution."
     }
 ];
+
+
+function newQuotes() {
+    var randomNum=Math.floor((Math.random()* quotes.length));
+    document.getElementById("quotedisplay").innerHTML = quotes[randomNum].quoteText;
+    document.getElementById("quoteauthor").innerHTML = quotes[randomNum].quoteAuthor;
+}
+
+document.getElementById("click").addEventListener("click",newQuotes);
+

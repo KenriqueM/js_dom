@@ -12,5 +12,29 @@
       <li>Favorites: <span id="favorites"></span></li>
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
+
+    <script>
+
+      document.body.style.fontFamily = "Arial, sans-serif";
+
+      document.getElementByid("nickname").textContent = "Kenny";
+
+      document.getElementByid("favorites").textContent = "fruitSalad";
+
+      document.getElementByid("hometown").textContent = "Arunachal";
+
+      document.querySelectorAll("li").classname = "listitem";
+
+      var ullist = querySelectorAll("li");
+      [...ullist].forEach(function(n) {
+        n.style.color = "red"
+      });
+
+      var image = document.createElement("img");
+      image.setAttribute ("src", "download.jpeg")
+      image.setAttribute ("alt", "nature");
+      document.body.appendChild(image);
+
+    </script>
   </body>
 </html>
